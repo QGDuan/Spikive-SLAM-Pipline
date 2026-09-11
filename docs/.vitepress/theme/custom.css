@@ -1,0 +1,22 @@
+/* 极简样式调整：字体栈与表格显示，其余使用 VitePress 默认主题 */
+
+:root {
+  --vp-font-family-base:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Arial,
+    sans-serif;
+  --vp-font-family-mono:
+    'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono',
+    Menlo, monospace;
+  --vp-layout-max-width: 1500px;
+}
+
+/* 表格按内容宽度完整显示，避免被窄容器压缩换行 */
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+
+.vp-doc table code {
+  white-space: nowrap;
+}
