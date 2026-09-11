@@ -83,18 +83,7 @@ https://<组织或用户名>.github.io/<仓库名>/
 6. **待确认事项**：统一写入 `docs/zh/appendix/pending-items.md` 与 `docs/en/appendix/pending-items.md`，正文标注 `[待确认]`。
 7. **依赖升级**：`package.json` 中 `vitepress` 与 `vitepress-plugin-mermaid` 版本锁定后，先本地 `npm run docs:build` 验证再推送。
 
-## 5. SKU 清单（入库管理）
-
-交付物已按 SKU 编码体系登记，用于后续入库/盘点管理：
-
-- 编码规则：`SPK-{域}-{模块}-{页型}-{语言}-{序号}`；
-- 权威源：`sku/manifest.json`（57 条目，机器可读）；
-- 导入件：`sku/manifest.csv`（UTF-8 BOM，Excel/系统导入）；
-- 人读版：`sku/manifest.md`（编码规则、全量清单、入库/变更/盘点流程）。
-
-新增或变更任何文件时，按 `sku/manifest.md` 第 3 节流程同步更新三份清单。
-
-## 6. 技术选型记录
+## 5. 技术选型记录
 
 | 项 | 选择 | 依据 |
 |---|---|---|
