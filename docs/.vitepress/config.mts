@@ -33,58 +33,71 @@ export default withMermaid(
           sidebar: [
             {
               text: '开始使用',
+              collapsed: false,
               items: [
                 { text: '首页', link: '/zh/' },
                 { text: '系统总览', link: '/zh/appendix/system-overview' }
               ]
             },
             {
-              text: 'SLAM',
+              text: '模块文档',
+              collapsed: false,
               items: [
-                { text: '模块索引', link: '/zh/slam/' },
-                { text: '命令行使用', link: '/zh/slam/commandline' },
-                { text: 'Docker 编译', link: '/zh/slam/docker-build' },
-                { text: '源码架构', link: '/zh/slam/architecture' }
-              ]
-            },
-            {
-              text: 'PGOBA',
-              items: [
-                { text: '模块索引', link: '/zh/pgoba/' },
-                { text: '命令行使用', link: '/zh/pgoba/commandline' },
-                { text: 'Docker 编译', link: '/zh/pgoba/docker-build' },
-                { text: '源码架构', link: '/zh/pgoba/architecture' }
-              ]
-            },
-            {
-              text: 'PCL',
-              items: [
-                { text: '模块索引', link: '/zh/pcl/' },
-                { text: '命令行使用', link: '/zh/pcl/commandline' },
-                { text: 'Docker 编译', link: '/zh/pcl/docker-build' },
-                { text: '源码架构', link: '/zh/pcl/architecture' }
-              ]
-            },
-            {
-              text: 'preprocess',
-              items: [
-                { text: '模块索引', link: '/zh/preprocess/' },
-                { text: '命令行使用', link: '/zh/preprocess/commandline' },
-                { text: 'Docker 编译', link: '/zh/preprocess/docker-build' },
-                { text: '源码架构', link: '/zh/preprocess/architecture' }
-              ]
-            },
-            {
-              text: '配套驱动',
-              items: [
-                { text: '模块索引', link: '/zh/driver-livox/' },
-                { text: '命令行使用', link: '/zh/driver-livox/commandline' },
-                { text: 'Docker 编译', link: '/zh/driver-livox/docker-build' },
-                { text: '源码架构', link: '/zh/driver-livox/architecture' }
+                {
+                  text: 'SLAM',
+                  link: '/zh/slam/',
+                  collapsed: true,
+                  items: [
+                    { text: '命令行使用', link: '/zh/slam/commandline' },
+                    { text: 'Docker 编译', link: '/zh/slam/docker-build' },
+                    { text: '源码架构', link: '/zh/slam/architecture' }
+                  ]
+                },
+                {
+                  text: 'PGOBA',
+                  link: '/zh/pgoba/',
+                  collapsed: true,
+                  items: [
+                    { text: '命令行使用', link: '/zh/pgoba/commandline' },
+                    { text: 'Docker 编译', link: '/zh/pgoba/docker-build' },
+                    { text: '源码架构', link: '/zh/pgoba/architecture' }
+                  ]
+                },
+                {
+                  text: 'PCL',
+                  link: '/zh/pcl/',
+                  collapsed: true,
+                  items: [
+                    { text: '命令行使用', link: '/zh/pcl/commandline' },
+                    { text: 'Docker 编译', link: '/zh/pcl/docker-build' },
+                    { text: '源码架构', link: '/zh/pcl/architecture' }
+                  ]
+                },
+                {
+                  text: 'preprocess',
+                  link: '/zh/preprocess/',
+                  collapsed: true,
+                  items: [
+                    { text: '命令行使用', link: '/zh/preprocess/commandline' },
+                    { text: 'Docker 编译', link: '/zh/preprocess/docker-build' },
+                    { text: '源码架构', link: '/zh/preprocess/architecture' }
+                  ]
+                },
+                {
+                  text: '配套驱动',
+                  link: '/zh/driver-livox/',
+                  collapsed: true,
+                  items: [
+                    { text: '命令行使用', link: '/zh/driver-livox/commandline' },
+                    { text: 'Docker 编译', link: '/zh/driver-livox/docker-build' },
+                    { text: '源码架构', link: '/zh/driver-livox/architecture' }
+                  ]
+                }
               ]
             },
             {
               text: '附录',
+              collapsed: false,
               items: [
                 { text: '待确认事项清单', link: '/zh/appendix/pending-items' },
                 { text: '提示词版本', link: '/zh/appendix/prompt-version' }
@@ -103,58 +116,71 @@ export default withMermaid(
           sidebar: [
             {
               text: 'Getting started',
+              collapsed: false,
               items: [
                 { text: 'Home', link: '/en/' },
                 { text: 'System overview', link: '/en/appendix/system-overview' }
               ]
             },
             {
-              text: 'SLAM',
+              text: 'Modules',
+              collapsed: false,
               items: [
-                { text: 'Module index', link: '/en/slam/' },
-                { text: 'Command line', link: '/en/slam/commandline' },
-                { text: 'Docker build', link: '/en/slam/docker-build' },
-                { text: 'Architecture', link: '/en/slam/architecture' }
-              ]
-            },
-            {
-              text: 'PGOBA',
-              items: [
-                { text: 'Module index', link: '/en/pgoba/' },
-                { text: 'Command line', link: '/en/pgoba/commandline' },
-                { text: 'Docker build', link: '/en/pgoba/docker-build' },
-                { text: 'Architecture', link: '/en/pgoba/architecture' }
-              ]
-            },
-            {
-              text: 'PCL',
-              items: [
-                { text: 'Module index', link: '/en/pcl/' },
-                { text: 'Command line', link: '/en/pcl/commandline' },
-                { text: 'Docker build', link: '/en/pcl/docker-build' },
-                { text: 'Architecture', link: '/en/pcl/architecture' }
-              ]
-            },
-            {
-              text: 'preprocess',
-              items: [
-                { text: 'Module index', link: '/en/preprocess/' },
-                { text: 'Command line', link: '/en/preprocess/commandline' },
-                { text: 'Docker build', link: '/en/preprocess/docker-build' },
-                { text: 'Architecture', link: '/en/preprocess/architecture' }
-              ]
-            },
-            {
-              text: 'Bundled driver',
-              items: [
-                { text: 'Module index', link: '/en/driver-livox/' },
-                { text: 'Command line', link: '/en/driver-livox/commandline' },
-                { text: 'Docker build', link: '/en/driver-livox/docker-build' },
-                { text: 'Architecture', link: '/en/driver-livox/architecture' }
+                {
+                  text: 'SLAM',
+                  link: '/en/slam/',
+                  collapsed: true,
+                  items: [
+                    { text: 'Command line', link: '/en/slam/commandline' },
+                    { text: 'Docker build', link: '/en/slam/docker-build' },
+                    { text: 'Architecture', link: '/en/slam/architecture' }
+                  ]
+                },
+                {
+                  text: 'PGOBA',
+                  link: '/en/pgoba/',
+                  collapsed: true,
+                  items: [
+                    { text: 'Command line', link: '/en/pgoba/commandline' },
+                    { text: 'Docker build', link: '/en/pgoba/docker-build' },
+                    { text: 'Architecture', link: '/en/pgoba/architecture' }
+                  ]
+                },
+                {
+                  text: 'PCL',
+                  link: '/en/pcl/',
+                  collapsed: true,
+                  items: [
+                    { text: 'Command line', link: '/en/pcl/commandline' },
+                    { text: 'Docker build', link: '/en/pcl/docker-build' },
+                    { text: 'Architecture', link: '/en/pcl/architecture' }
+                  ]
+                },
+                {
+                  text: 'preprocess',
+                  link: '/en/preprocess/',
+                  collapsed: true,
+                  items: [
+                    { text: 'Command line', link: '/en/preprocess/commandline' },
+                    { text: 'Docker build', link: '/en/preprocess/docker-build' },
+                    { text: 'Architecture', link: '/en/preprocess/architecture' }
+                  ]
+                },
+                {
+                  text: 'Bundled driver',
+                  link: '/en/driver-livox/',
+                  collapsed: true,
+                  items: [
+                    { text: 'Command line', link: '/en/driver-livox/commandline' },
+                    { text: 'Docker build', link: '/en/driver-livox/docker-build' },
+                    { text: 'Architecture', link: '/en/driver-livox/architecture' }
+                  ]
+                }
               ]
             },
             {
               text: 'Appendix',
+              collapsed: false,
               items: [
                 { text: 'Pending items', link: '/en/appendix/pending-items' },
                 { text: 'Prompt version', link: '/en/appendix/prompt-version' }
