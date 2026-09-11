@@ -11,10 +11,11 @@
   --vp-layout-max-width: 1500px;
 }
 
-/* 表格按内容宽度完整显示，避免被窄容器压缩换行 */
+/* 表格在内容列内滚动，避免宽表溢出压到右侧本页目录 */
 .vp-doc table {
-  display: table;
+  display: block;
   width: 100%;
+  overflow-x: auto;
 }
 
 .vp-doc table code {

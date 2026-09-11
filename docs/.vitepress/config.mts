@@ -9,22 +9,16 @@ export default withMermaid(
     base,
     title: 'Spikive SLAM Pipeline',
     description: 'Spikive SLAM Pipeline 源码级交付文档',
+    lang: 'zh-CN',
     cleanUrls: true,
     lastUpdated: false,
 
     locales: {
-      zh: { label: '中文', lang: 'zh-CN', link: '/zh/' },
-      en: { label: 'English', lang: 'en-US', link: '/en/' }
-    },
-
-    themeConfig: {
-      search: {
-        provider: 'local'
-      },
-      locales: {
-        zh: {
-          label: '中文',
-          selectText: '语言',
+      zh: {
+        label: '中文',
+        lang: 'zh-CN',
+        link: '/zh/',
+        themeConfig: {
           nav: [
             { text: '首页', link: '/zh/' },
             { text: '系统总览', link: '/zh/appendix/system-overview' },
@@ -104,10 +98,13 @@ export default withMermaid(
               ]
             }
           ]
-        },
-        en: {
-          label: 'English',
-          selectText: 'Languages',
+        }
+      },
+      en: {
+        label: 'English',
+        lang: 'en-US',
+        link: '/en/',
+        themeConfig: {
           nav: [
             { text: 'Home', link: '/en/' },
             { text: 'System overview', link: '/en/appendix/system-overview' },
@@ -188,6 +185,12 @@ export default withMermaid(
             }
           ]
         }
+      }
+    },
+
+    themeConfig: {
+      search: {
+        provider: 'local'
       }
     }
   }),
